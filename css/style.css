@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2 {
+  margin: 1rem 0;
+}
+
+a > img {
+  max-width: 50px;
+  height: auto;
+}
+
+span > img {
+  max-width: 13px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 0;
+}
+
+a:hover,
+span:hover {
+  color: orange;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+nav ul li ul a:hover {
+  border-bottom: none;
+}
+
+main {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+.infobulle,
+.infobulle2 {
+  position: relative;
+}
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: -2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 0.5rem;
+  background-color: orange;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 15rem;
+}
+
+.infobulle2:hover::after,
+.infobulle2:focus::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 0.5rem;
+  background-color: orange;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 15rem;
+}
+
+#bonhomme_pleure {
+  width: 10rem;
+  height: auto;
+}
+
+input,
+select {
+  border: none;
+  border: 2px solid orange;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+}
+
+input[type="submit"] {
+  color: orange;
+  width: 10rem;
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+table,
+td,
+th {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #555555;
+  border-collapse: collapse;
+}

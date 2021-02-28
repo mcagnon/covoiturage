@@ -1,3 +1,4 @@
-# Site de covoiturage
+Structure de base pour l'application covoiturage de l'IUT du Limousin en PHP <br />
+<br />
 
-Projet de création d'un site de covoiturage dans le cadre du DUT Informatique
+Le fichier config.inc.php contient les paramètres pour la base MySQL <br /> </br>
